@@ -1,0 +1,13 @@
+{
+  "Name": "Pavan",
+  "empId": "AA1030",
+  "month": "march",
+  "bankName": "ICICI bank",
+  "IFSC": "ICIC00123",
+  "AcntNo": 1355454211,
+  "pan": "ABCD12345",
+  "basicSal": 15000,
+  "hra": 0.1,
+  "medicalAllowance": 2000,
+  "leaves": 5
+}

@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/sal.js"></script>
+    <script src="../js/leaves.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/nav.css" />
+
+    <script>
+      $(document).ready(function () {
+        $("#bt").on("click", function () {
+          $("#renderPage").load("login2.html");
+        });
+        $("#bt1").on("click", function () {
+          $("#renderPage").load("home.html");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#nav").load("navBar.html");
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#reg").on("click", function () {
+          $("#renderPage").load("signup.html");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-light justify-content-between"
+      style="background-color: dimgray"
+    >
+      <a class="navbar-brand"
+        ><img
+          style="height: 45px; width: 45px; border-radius: 50%"
+          src="../images/cdac.jpeg"
+          alt="Logo"
+      /></a>
+      <div style="justify-content: space-around; display: flex; width: 300px">
+        <a style="color: white" href="#" id="bt1">Home</a>
+        <a style="color: white; cursor: pointer" id="bt">Sign In</a>
+
+        <a id="reg" style="color: white" href="#">Sign Up</a>
+        <a style="color: white" href="#">About us</a>
+        <button id="sal">View Salary</button>
+        <button id="leave">Leaves</button>
+      </div>
+    </nav>
+
+    <div id="renderPage"></div>
+  </body>
+</html>

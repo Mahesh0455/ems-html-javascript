@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../js/login.js" ></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/nav.css" />
+
+    <title>login_page</title>
+  </head>
+  <body>
+    
+ 
+
+<div
+  class="card"
+  style="
+    padding: 10% 15% 10% 15%;
+    margin: 2% 20% 2% 20%;
+    background-color: rgb(177, 245, 183);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  "
+>
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        aria-describedby="emailHelp"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="pass"
+        placeholder="Password"
+        required
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary" onclick="loginAsEmployee()" >Login as Employee</button>
+    <button type="submit" class="btn btn-primary" onclick="loginAsAdmin()" >Login as Admin</button>
+
+  </form>
+</body>
+</div>
